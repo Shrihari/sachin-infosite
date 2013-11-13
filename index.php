@@ -15,6 +15,8 @@
 	
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet/less" href="assets/css/style.less">
 
@@ -53,6 +55,8 @@
 // $row = 1;
 if (($handle = fopen("data.csv", "r")) !== FALSE) 
 {
+    $c = 0;
+
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
     {
         // $num = count($data);
@@ -67,13 +71,15 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
         {
 ?>
 				<li class="featured test">
+
+					<div class="date">
+						<?php echo date("M j, Y", strtotime($data[0])); ?>
+					</div>
+
 					<a href="#" class="anchor">•</a>
 
 					<div class="content">
 						<div class="content-inner">
-							<div class="meta">
-								<div class="date"><?php echo $data[0]; ?></div>
-							</div>
 							<div class="trivia">
 								<?php echo $data[5]; ?>
 							</div>
@@ -109,28 +115,58 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
         {
 ?>
 				<li class="featured <?php echo strtolower($data[6]); ?>">
-					<div id="image1" class="image">
-						<a href="assets/images/1-2.jpg"><img src="assets/images/1-2.jpg" width="150" height="150" /></a>
-						<a href="assets/images/1.jpeg"><img src="assets/images/1.jpeg" width="150" height="150" /></a>
+
+					<div class="date">
+						<?php echo date("M j, Y", strtotime($data[0])); ?>
 					</div>
 
-					<a href="#" class="anchor"><?php echo ($data[1] == 'x' ? '•' : $data[1]); ?></a>
+					<a href="#" class="anchor"><?php echo ($data[1][0] == 'x' ? '•' : $data[1]); ?></a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date"><?php echo $data[0]; ?></div>
+								<!-- <div class="date"><?php echo $data[0]; ?></div> -->
 								<div class="venue"><?php echo $data[4]; ?></div>
 							</div>
 							<div class="title">
 								<span class="score"><?php echo $data[3]; ?></span>
 								<small>vs.</small>
-								<span class="opponent"><?php echo $data[2]; ?></span>
+								<span class="opponent <?php echo ($data[1] == 'x' ? : 'flag '.str_replace(' ', '-', strtolower($data[2]))); ?>"><?php echo $data[2]; ?></span>
 							</div>
 							<div class="details">
 								<ul>
-									<?php echo $data[5]; ?>
+									<?php 
+										$details = explode("\n", $data[5]);
+
+										foreach($details as $detail)
+										{
+											echo '<li>';
+
+											$d = explode(" ", $detail, 2);
+
+											if($d[0] == "#")
+												echo '<i class="fa fa-star fa-fw gold"></i>';
+											elseif($d[0] == '*')
+												echo '<i class="fa fa-star fa-fw silver"></i>';
+											elseif($d[0] == '-')
+												echo '<i class="fa fa-caret-right fa-fw bronze"></i>';
+
+											echo $d[1];
+											echo '</li>';
+										}
+									?>
+
 								</ul>
+								<div id="image<?php echo $c++; ?>" class="image">
+									<?php
+									foreach(glob(getcwd().'/assets/images/'.$data[1].'-*.jpg') as $imagename)
+									{
+									?>
+										<a href="<?php echo str_replace(getcwd().'/', '', $imagename); ?>"><img src="assets/images/thumbs/<?php echo $data[1]; ?>.jpg" width="140" height="140" /></a>
+									<?php
+									}
+									?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -146,6 +182,12 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
 ?>
 
 			</ul>
+		</div>
+	</div>
+
+	<div id="footer-container">
+		<div id="footer" class="wrap">
+
 		</div>
 	</div>
 

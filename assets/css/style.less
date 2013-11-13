@@ -12,7 +12,7 @@ body {
 }
 
 .wrap {
-	width: 960px;
+	width: 980px;
 	margin: 0 auto;
 }
 
@@ -34,9 +34,11 @@ body {
 }
 
 #intro > h1 {
-	font-size: 96px;
-	font-weight: lighter;
+	font-family: 'Arvo';
+	font-size: 108px;
+	font-weight: normal;
 	margin: 20px 0;
+	text-shadow: 4px 3px 0 @blue,9px 8px 0 rgba(0,0,0,0.15);
 }
 #intro > h2 {
 	font-family: Georgia, "Times New Roman", serif;
@@ -93,59 +95,39 @@ h2 > span { text-decoration: line-through; }
 .featured {
 	margin: 100px 0 100px 0!important;
 }
-.image {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-radius: 5px;
+
+.date, .anchor, .content {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
 }
-.image img {
-	max-height: 100%;
+.date {
+	width: 170px;
+	text-align: right;
+	top: 35px;
+	padding-right: 15px;
+	font-size: 26px;
+	color: rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
-.image:before {
-    font-family: 'FontAwesome';
-    content: "\f0da";
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 48px;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: -28px;
-    top: 30px;
-    z-index: 2;
-    text-shadow: 4px 2px 6px rgba(0,0,0,0.1);
-}
-.odi > .image { background: @blue; }
-.odi > .image:before { color: @blue; }
-.test > .image { background: @white; }
-.test > .image:before { color: @white; }
 
 .anchor {
-	display: block;
-	position: absolute;
-	left: 210px;
 	top: 30px;
 	background: @blue;
 	color: #FFF;
-	font-weight: bold;
+	font-size: 12px;
+	font-weight: lighter;
 	text-decoration: none;
-	width: 50px;
+	width: 40px;
 	text-align: center;
-	padding: 15px 0;
+	padding: 13px 0;
 	border-radius: 50%;
-	transform: translate(-50%, 0);
-	-webkit-transform: translate(-50%, 0);
+	margin: 0;
 }
-// .odi > .anchor { color: @white; background: @blue; }
-// .test > .anchor { color: @blue; background: @white; }
 
 .content {
-    margin-left: 260px;
-    position: relative;
+    margin-left: 20px;
+    width: 725px;
     min-height: 150px;
 }
 .content-inner:before {
@@ -158,12 +140,11 @@ h2 > span { text-decoration: line-through; }
     width: 30px;
     height: 30px;
     left: -14px;
-    top: 30px;
+    top: 28px;
     z-index: 2;
     text-shadow: -4px 2px 6px rgba(0,0,0,0.1);
 }
 .content-inner {
-	position: relative;
     padding: 20px;
     color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -202,6 +183,7 @@ h2 > span { text-decoration: line-through; }
 	padding: 8px 0;
 }
 
+
 .details {
 	padding: 15px 0 0 0;
 }
@@ -221,12 +203,23 @@ h2 > span { text-decoration: line-through; }
 	list-style: none;
 	font-size: 24px;
 	line-height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	width: 540px;
 }
+.image {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+}
+
 .trivia {
 	font-size: 32px;
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
-	margin-right: 150px;
 }
 .trivia > ul {
 	font-size: 22px;
@@ -234,79 +227,45 @@ h2 > span { text-decoration: line-through; }
 	margin: 5px 0;
 }
 
-/* Smaller Events */
-.small-anchor {
-	display: block;
-	position: absolute;
-	left: 210px;
-	background: @blue;
-	color: #FFF;
-	font-weight: bold;
-	text-decoration: none;
-	width: 14px;
-	height: 14px;
-	text-align: center;
-	border-radius: 50%;
-	transform: translate(-50%, 0);
-	-webkit-transform: translate(-50%, 0);
-	transition: all 0.2s ease;
-}
-.odi > .small-anchor { color: @white; background: @blue; }
-.test > .small-anchor { color: @blue; background: @white; }
-
-.small-content {
-    position: absolute;
-    left: 260px;
-    right: 0;
-}
-.small-content-inner:before {
-    // font-family: 'FontAwesome';
-    // content: "\f0d9";
-    // font-weight: normal;
-    // font-size: 48px;
-    // line-height: 48px;
-    // position: absolute;
-    // width: 30px;
-    // height: 30px;
-    // left: -14px;
-    // top: 10px;
-    // z-index: 2;
-    // text-shadow: -4px 2px 6px rgba(0,0,0,0.1);
-}
-.small-content-inner {
-	position: relative;
-    // padding: 10px 20px;
-    color: #555;
-    // box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    // background: @blue;
-}
-// .odi .small-content-inner { color: @white; background: @blue; }
-// .odi .small-content-inner:before { color: @blue; }
-// .test .small-content-inner { color: @blue; background: @white; }
-// .test .small-content-inner:before { color: @white; }
-
-.small-content-inner .title {
-	font-size: 14px;
-	border: 0;
-}
-.small-content-inner .title > .score {
-	font-size: 14px;
-	font-family: Georgia, "Times New Roman", serif;
-	font-style: italic;
-}
-.small-content-inner .title > .opponent {
-	font-size: 14px;
-}
-.small-content-inner .meta {
-	text-align: right;
-	line-height: 140%;
-	float: right;
-	font-size: 11px;
-	opacity: 0.4;
-	// padding: 6px 0;
-}
-.odi .small-content-inner .meta { color: @white; }
-.test .small-content-inner .meta { color: #555; }
-
 .gold { color: @gold; }
 .silver { color: @silver;}
+.bronze { opacity: 0.3; }
+
+.flag {
+	padding-right: 50px;
+	background-size: 40px;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+}
+.australia { background-image: url('../img/flags/australia.png'); }
+.bangladesh { background-image: url('../img/flags/bangladesh.png'); }
+.england { background-image: url('../img/flags/england.png'); }
+.india { background-image: url('../img/flags/india.png'); }
+.kenya { background-image: url('../img/flags/kenya.png'); }
+.new-zealand { background-image: url('../img/flags/new-zealand.png'); }
+.pakistan { background-image: url('../img/flags/pakistan.png'); }
+.south-africa { background-image: url('../img/flags/south-africa.png'); }
+.sri-lanka { background-image: url('../img/flags/sri-lanka.png'); }
+.west-indies { background-image: url('../img/flags/west-indies.png'); }
+.zimbabwe { background-image: url('../img/flags/zimbabwe.png'); }
+
+
+/* Footer Section */
+
+#footer-container {
+	width: 100%;
+	min-height: 800px;
+	color: #fff;
+	background: @blue;
+	text-align: center;
+	border-top: 10px solid #b3d0da;
+}
+#footer {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+}
+
+h2 > span { text-decoration: line-through; }
+
