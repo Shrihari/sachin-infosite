@@ -19,6 +19,7 @@
 	<link rel="stylesheet/less" href="assets/css/style.less">
 
 	<script src="assets/js/less.js" type="text/javascript"></script>
+	<script src="assets/js/skrollr.min.js" type="text/javascript"></script>
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/popup.js" type="text/javascript"></script>
 	<script src="assets/js/custom.js" type="text/javascript"></script>
@@ -40,7 +41,9 @@
 	<div id="body-container">
 		<div id="body" class="wrap">
 			<div id="timeline-bg">
-				<div id="timeline"></div>
+				<div id="timeline"
+					 data-500="height: 0px;"
+					 data-5500="height: 5000px;"></div>
 			</div>
 
 
@@ -81,15 +84,16 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
         }
         elseif($data[1] == '')
         {
+        	/*
 ?>
 				<li class="<?php echo strtolower($data[6]); ?>">
 					<a href="#" class="small-anchor"></a>
 					<div class="small-content">
 						<div class="small-content-inner">
-							<div class="meta">
+<!-- 							<div class="meta">
 								<div class="date"><?php echo $data[0]; ?></div>
 								<div class="venue"><?php echo $data[4]; ?></div>
-							</div>
+							</div> -->
 							<div class="title">
 								<span class="score"><?php echo $data[3]; ?></span>
 								<small>vs.</small>
@@ -99,6 +103,7 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
 					</div>
 				</li>
 <?php
+			*/
         }
         else
         {

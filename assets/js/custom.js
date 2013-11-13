@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	
+	var s = skrollr.init();
+	
 	$('#image1').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -19,11 +21,11 @@ $(document).ready(function(){
 
 	$(".image a:not(:first-child)").hide();
 
-	$('.small-content').hide();
+	// $('.small-content').hide();
 
-	$('.small-anchor').hover(function(){
-		$(this).siblings('.small-content').stop().fadeIn();
-	}, function(){
-		$(this).siblings('.small-content').stop().fadeOut();
-	});
+	// $('.small-anchor').hover(function(){
+	// 	$(this).siblings('.small-content').stop().fadeIn();
+	// }, function(){
+	// 	$(this).siblings('.small-content').stop().fadeOut();
+	// });
 });
