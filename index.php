@@ -10,6 +10,9 @@
 	<!-- Site Description and Keywords-->
 	<meta name="keywords" content="Sachin Tendulkar" />
 	<meta name="description" content="Career timeline of Sachin Tendulkar." />
+	<meta property="og:title" content="Timeline of Sachin's records" /> 
+	<meta property="og:image" content="assets/images/x3-2.jpg" /> 
+
       	
 	<link href="assets/favicon.ico" rel="shortcut icon">
 	
@@ -32,11 +35,22 @@
 
 <body>
 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=168277226614067";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div id="intro-container">
 		<div id="intro" class="wrap">
-			<img src="assets/img/sachin.png" />
+			<!-- <img src="assets/img/sachin.png" /> -->
 			<h1>Sachin Tendulkar</h1>
-			<h2>a <span>leg</span> glance at the legend's cricketing career</h2>
+			<h2>a <span>leg</span> glance at the legend's history of records</h2>
+
+			<div id="instructions">use <i class="fa fa-toggle-up fa-fw"></i> Up &amp; <i class="fa fa-toggle-down fa-fw"></i> Down keys to navigate</div>
 		</div>
 	</div>
 
@@ -45,7 +59,7 @@
 			<div id="timeline-bg">
 				<div id="timeline"
 					 data-500="height: 0px;"
-					 data-5500="height: 5000px;"></div>
+					 data-15500="height: 15000px;"></div>
 			</div>
 
 
@@ -56,7 +70,7 @@
 if (($handle = fopen("data.csv", "r")) !== FALSE) 
 {
     $c = 0;
-
+    $event = 1;
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
     {
         // $num = count($data);
@@ -70,7 +84,7 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
         if($data[1] == 'y')
         {
 ?>
-				<li class="featured test">
+				<li id="event<?php echo $event++; ?>" class="featured test">
 
 					<div class="date">
 						<?php echo date("M j, Y", strtotime($data[0])); ?>
@@ -114,7 +128,7 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
         else
         {
 ?>
-				<li class="featured <?php echo strtolower($data[6]); ?>">
+				<li id="event<?php echo $event++; ?>" class="featured <?php echo strtolower($data[6]); ?>">
 
 					<div class="date">
 						<?php echo date("M j, Y", strtotime($data[0])); ?>
@@ -187,7 +201,16 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
 
 	<div id="footer-container">
 		<div id="footer" class="wrap">
+			<h2>an era comes to an end</h2>
+			<h1>Nov. 1989 - Nov. 2013</h1>
 
+			<div id="share">
+				<div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+			</div>
+
+			<div id="author">
+				crafted with <i class="fa fa-heart fa-fw red"></i> by <a href="http://shrihari.me/">shrihari</a>
+			</div>
 		</div>
 	</div>
 
