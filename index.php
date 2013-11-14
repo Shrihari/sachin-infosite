@@ -205,7 +205,7 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
 			<h1>Nov. 1989 - Nov. 2013</h1>
 
 			<div id="share">
-				<div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+				<div class="fb-share-button" data-href="http://http://stormy-gorge-9545.herokuapp.com/index.php" data-type="button_count"></div>
 			</div>
 
 			<div id="author">
