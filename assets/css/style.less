@@ -198,8 +198,8 @@ h2 > span { text-decoration: line-through; }
 	padding: 15px 0 0 0;
 }
 
-.odi .content-inner .meta, .odi .content-inner .details { color: @white; }
-.test .content-inner .meta, .test .content-inner .details { color: #555; }
+.odi .content-inner .meta, .odi .content-inner .details, .odi .content-inner .details a { color: @white; }
+.test .content-inner .meta, .test .content-inner .details, .test .content-inner .details { color: #555; }
 
 .odi .content-inner .details {
 	border-top: 1px solid fade(softlight(@blue, white), 50%);
@@ -314,9 +314,16 @@ h2 > span { text-decoration: line-through; }
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 #author > a {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.4);
 	text-decoration: none;
 	text-decoration: underline;
 }
 #author > a:hover {
 }
+#thanks {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 240px;
+}
+#thanks > a {  color: rgba(0, 0, 0, 0.2);}

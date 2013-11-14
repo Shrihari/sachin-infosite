@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -9,284 +10,1290 @@
 	
 	<!-- Site Description and Keywords-->
 	<meta name="keywords" content="Sachin Tendulkar" />
-	<meta name="description" content="Career timeline of Sachin Tendulkar." />
-      	
-	<link href="assets/favicon.ico" rel="shortcut icon">
+	<meta name="description" content="An interactive timeline of Sachin Tendulkar's records." />
 	
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<link rel="stylesheet/less" href="assets/css/style.less">
+	<link rel="stylesheet" href="assets/css/style.css">
 
-	<script src="assets/js/less.js" type="text/javascript"></script>
+	<script src="assets/js/skrollr.min.js" type="text/javascript"></script>
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/popup.js" type="text/javascript"></script>
 	<script src="assets/js/custom.js" type="text/javascript"></script>
 
-	<title>Sachin Tendulkar - a timeline</title>
+	<title>Sachin Tendulkar - a timeline of records</title>
   
 </head>
-
 <body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=168277226614067";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<div id="intro-container">
 		<div id="intro" class="wrap">
-			<img src="assets/img/sachin.png" />
+			<!-- <img src="assets/img/sachin.png" /> -->
 			<h1>Sachin Tendulkar</h1>
-			<h2>a <span>leg</span> glance at the legend's cricketing career</h2>
+			<h2>a <span>leg</span> glance at the legend's history of records</h2>
+
+			<div id="instructions">use <i class="fa fa-toggle-up fa-fw"></i> Up &amp; <i class="fa fa-toggle-down fa-fw"></i> Down keys to navigate</div>
 		</div>
 	</div>
 
 	<div id="body-container">
 		<div id="body" class="wrap">
 			<div id="timeline-bg">
-				<div id="timeline"></div>
+				<div id="timeline"
+					 data-500="height: 0px;"
+					 data-15500="height: 15000px;"></div>
 			</div>
 
 
 			<ul id="events">
 
-				<li class="featured">
+				<li id="event1" class="featured test">
+
+					<div class="date">
+						Nov 14, 1987					</div>
+
+					<a href="#" class="anchor">•</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="trivia">
+								Selected to represent Mumbai in Ranji. Was not in playing 11.							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event2" class="featured test">
+
+					<div class="date">
+						Feb 25, 1988					</div>
+
 					<a href="#" class="anchor">•</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">November 15, 1989</div>
+								<!-- <div class="date">February 25, 1988</div> -->
+								<div class="venue"></div>
 							</div>
-							<div class="trivia">
-								Wisden rated Sachin as the
-									<ul>
-										<li>2nd greatest Test batsman after Don Bradman</li>
-										<li>2nd greatest ODI batsman after Viv Richards</li>
-									</ul>
-								of all-time
+							<div class="title">
+								<span class="score">326*</span>
+								<small>vs.</small>
+								<span class="opponent flag st.-xavier's-high-school">St. Xavier's High School</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw silver"></i>Highest partnership in any form of cricket</li>
+								</ul>
+								<div id="image0" class="image">
+																			<a href="assets/images/x1-1.jpg"><img src="assets/images/thumbs/x1.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x1-2.jpg"><img src="assets/images/thumbs/x1.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x1-3.jpg"><img src="assets/images/thumbs/x1.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
-				<li class="featured odi">
-					<div id="image1" class="image">
-						<a href="assets/images/1-2.jpg"><img src="assets/images/1-2.jpg" width="150" height="150" /></a>
-						<a href="assets/images/1.jpeg"><img src="assets/images/1.jpeg" width="150" height="150" /></a>
-					</div>
+				<li id="event3" class="featured test">
 
-					<a href="#" class="anchor">663</a>
+					<div class="date">
+						Dec 11, 1988					</div>
+
+					<a href="#" class="anchor">•</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">September 12, 2001</div>
-								<div class="venue">Vidarbha Cricket Association Stadium, Nagpur</div>
+								<!-- <div class="date">December 11, 1988</div> -->
+								<div class="venue">Wankhede Stadium, Bombay</div>
 							</div>
 							<div class="title">
-								<span class="score">200*</span>
+								<span class="score">100*</span>
 								<small>vs.</small>
-								<span class="opponent">South Africa</span>
+								<span class="opponent flag gujarat">Gujarat</span>
 							</div>
 							<div class="details">
 								<ul>
-									<li><i class="fa fa-star fa-fw gold"></i>First person to score 200 runs in ODI</li>
-									<li><i class="fa fa-star fa-fw silver"></i>Only person with five 150+ scores</li>
-									<li><i class="fa fa-fw"></i>Broke a record which stood for 13 years</li>
+									<li><i class="fa fa-star fa-fw gold"></i>Youngest Indian to score a century on first-class debut.</li>
 								</ul>
-							</div>
-							<!-- <h3>169* vs New Zealand</h3> -->
-						</div>
-					</div>
-				</li>
-
-				<li class="test">
-					<a href="#" class="small-anchor"></a>
-					<div class="small-content">
-						<div class="small-content-inner">
-							<div class="meta">
-								<div class="date">September 12, 2001</div>
-								<div class="venue">Vidarbha Cricket Association Stadium, Nagpur</div>
-							</div>
-							<div class="title">
-								<span class="score">200*</span>
-								<small>vs.</small>
-								<span class="opponent">South Africa</span>
+								<div id="image1" class="image">
+																			<a href="assets/images/x2-1.jpg"><img src="assets/images/thumbs/x2.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x2-2.jpg"><img src="assets/images/thumbs/x2.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
-				<li class="odi">
-					<a href="#" class="small-anchor"></a>
-					<div class="small-content">
-						<div class="small-content-inner">
-							<div class="meta">
-								<div class="date">September 12, 2001</div>
-								<div class="venue">Vidarbha Cricket Association Stadium, Nagpur</div>
-							</div>
-							<div class="title">
-								<span class="score">200*</span>
-								<small>vs.</small>
-								<span class="opponent">South Africa</span>
-							</div>
-						</div>
-					</div>
-				</li>
+				<li id="event4" class="featured test">
 
-				<li class="featured">
-					<div id="image2" class="image">
-						<a href="assets/images/1-2.jpg"><img src="assets/images/1-2.jpg" width="150" height="150" /></a>
-						<a href="assets/images/1.jpeg"><img src="assets/images/1.jpeg" width="150" height="150" /></a>
-					</div>
+					<div class="date">
+						Nov 15, 1989					</div>
 
 					<a href="#" class="anchor">1</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">November 15, 1989</div>
+								<!-- <div class="date">November 15, 1989</div> -->
 								<div class="venue">National Stadium, Karachi</div>
 							</div>
 							<div class="title">
 								<span class="score">15</span>
 								<small>vs.</small>
-								<span class="opponent">Pakistan</span>
+								<span class="opponent flag pakistan">Pakistan</span>
 							</div>
 							<div class="details">
 								<ul>
-									<li>2nd youngest debutant in the world</li>
+									<li><i class="fa fa-star fa-fw silver"></i>2nd youngest debutant in the world</li>
 								</ul>
+								<div id="image2" class="image">
+																			<a href="assets/images/1-1.jpg"><img src="assets/images/thumbs/1.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/1-2.jpg"><img src="assets/images/thumbs/1.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
+				<li id="event5" class="featured test">
 
-				<li>
-					<div class="image">
-					</div>
+					<div class="date">
+						Aug 9, 1990					</div>
 
 					<a href="#" class="anchor">16</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">August 9, 1990</div>
+								<!-- <div class="date">August 9, 1990</div> -->
 								<div class="venue">Old Trafford, Manchester</div>
 							</div>
 							<div class="title">
 								<span class="score">119*</span>
 								<small>vs.</small>
-								<span class="opponent">England</span>
+								<span class="opponent flag england">England</span>
 							</div>
 							<div class="details">
 								<ul>
-									<li>2nd youngest player to score a century
-1st international century</li>
+									<li><i class="fa fa-star fa-fw silver"></i>2nd youngest player to score a century</li><li><i class="fa fa-caret-right fa-fw bronze"></i>1st international century</li>
 								</ul>
+								<div id="image3" class="image">
+																			<a href="assets/images/16-1.jpg"><img src="assets/images/thumbs/16.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
+				<li id="event6" class="featured test">
 
-				<li>
-					<div class="image">
-					</div>
+					<div class="date">
+						May 7, 1992					</div>
 
-					<a href="#" class="anchor"></a>
+					<a href="#" class="anchor">•</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">May 7, 1992</div>
+								<!-- <div class="date">May 7, 1992</div> -->
 								<div class="venue">Headingley, Leeds</div>
 							</div>
 							<div class="title">
 								<span class="score">86</span>
 								<small>vs.</small>
-								<span class="opponent">Hampshire</span>
+								<span class="opponent flag hampshire">Hampshire</span>
 							</div>
 							<div class="details">
 								<ul>
-									<li>1st overseas born player to represent Yorkshire
-Aged 19</li>
+									<li><i class="fa fa-star fa-fw gold"></i>1st overseas born player to represent Yorkshire</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Aged 19</li>
 								</ul>
+								<div id="image4" class="image">
+																			<a href="assets/images/x3-1.jpg"><img src="assets/images/thumbs/x3.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x3-2.jpg"><img src="assets/images/thumbs/x3.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x3-3.jpg"><img src="assets/images/thumbs/x3.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
+				<li id="event7" class="featured odi">
 
-				<li>
-					<div class="image">
-					</div>
+					<div class="date">
+						Sep 9, 1994					</div>
 
 					<a href="#" class="anchor">111</a>
 
 					<div class="content">
 						<div class="content-inner">
 							<div class="meta">
-								<div class="date">September 9, 1994</div>
+								<!-- <div class="date">September 9, 1994</div> -->
 								<div class="venue">R Premadasa Stadium, Colombo</div>
 							</div>
 							<div class="title">
 								<span class="score">110</span>
 								<small>vs.</small>
-								<span class="opponent">Australia</span>
+								<span class="opponent flag australia">Australia</span>
 							</div>
 							<div class="details">
 								<ul>
-									<li>1st ODI century
-79th ODI match</li>
+									<li><i class="fa fa-caret-right fa-fw bronze"></i>1st ODI century</li><li><i class="fa fa-caret-right fa-fw bronze"></i>79th ODI match</li>
 								</ul>
+								<div id="image5" class="image">
+																			<a href="assets/images/111-1.jpg"><img src="assets/images/thumbs/111.jpg" width="140" height="140" /></a>
+																	</div>
 							</div>
 						</div>
 					</div>
 				</li>
 
-				<li>
-					<a href="#" class="small-anchor"></a>
-					<div class="small-content">
-						<div class="content-inner">
-							<h4>169* vs New Zealand</h4>
-						</div>
-					</div>
-				</li>
+				<li id="event8" class="featured odi">
 
-				<li>
-					<a href="#" class="small-anchor"></a>
-					<div class="small-content">
-						<div class="content-inner">
-							<h4>169* vs New Zealand</h4>
-						</div>
-					</div>
-				</li>
+					<div class="date">
+						Aug 28, 1996					</div>
 
-				<li>
-					<a href="#" class="small-anchor"></a>
-					<div class="small-content">
-						<div class="content-inner">
-							<h4>169* vs New Zealand</h4>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="image">
-					</div>
-
-					<a href="#" class="anchor">663</a>
+					<a href="#" class="anchor">161</a>
 
 					<div class="content">
 						<div class="content-inner">
-							<b>169* vs New Zealand</b>
+							<div class="meta">
+								<!-- <div class="date">August 28, 1996</div> -->
+								<div class="venue">R Premadasa Stadium, Colombo</div>
+							</div>
+							<div class="title">
+								<span class="score">110</span>
+								<small>vs.</small>
+								<span class="opponent flag sri-lanka">Sri Lanka</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Only Indian to score century on Captaincy Debut</li>
+								</ul>
+								<div id="image6" class="image">
+																			<a href="assets/images/161-1.jpg"><img src="assets/images/thumbs/161.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
 						</div>
 					</div>
 				</li>
 
-			</ul>
+				<li id="event9" class="featured odi">
 
+					<div class="date">
+						Apr 22, 1998					</div>
+
+					<a href="#" class="anchor">248</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">April 22, 1998</div> -->
+								<div class="venue">Sharjah Cricket Association Stadium</div>
+							</div>
+							<div class="title">
+								<span class="score">143</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-caret-right fa-fw bronze"></i>THE innings</li><li><i class="fa fa-caret-right fa-fw bronze"></i>nuff said</li><li><i class="fa fa-caret-right fa-fw bronze"></i><a href="http://www.youtube.com/watch?v=07BMrivOzUE">youtube link</a></li>
+								</ul>
+								<div id="image7" class="image">
+																			<a href="assets/images/248-1.jpg"><img src="assets/images/thumbs/248.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/248-2.jpg"><img src="assets/images/thumbs/248.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event10" class="featured odi">
+
+					<div class="date">
+						Apr 24, 1998					</div>
+
+					<a href="#" class="anchor">249</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">April 24, 1998</div> -->
+								<div class="venue">Sharjah Cricket Association Stadium</div>
+							</div>
+							<div class="title">
+								<span class="score">134</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most number of consecutive matches played</li><li><i class="fa fa-caret-right fa-fw bronze"></i>185th consecutive match since April 1990</li>
+								</ul>
+								<div id="image8" class="image">
+																			<a href="assets/images/249-1.jpg"><img src="assets/images/thumbs/249.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event11" class="featured odi">
+
+					<div class="date">
+						Sep 20, 1998					</div>
+
+					<a href="#" class="anchor">259</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">September 20, 1998</div> -->
+								<div class="venue">Queens Sports Club, Bulawayo</div>
+							</div>
+							<div class="title">
+								<span class="score">127*</span>
+								<small>vs.</small>
+								<span class="opponent flag zimbabwe">Zimbabwe</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most number of centuries in ODI</li><li><i class="fa fa-caret-right fa-fw bronze"></i>18th ODI century</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Desmond Haynes' record</li>
+								</ul>
+								<div id="image9" class="image">
+																			<a href="assets/images/259-1.jpg"><img src="assets/images/thumbs/259.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event12" class="featured odi">
+
+					<div class="date">
+						Nov 13, 1998					</div>
+
+					<a href="#" class="anchor">269</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">November 13, 1998</div> -->
+								<div class="venue">Sharjah Cricket Association Stadium</div>
+							</div>
+							<div class="title">
+								<span class="score">124*</span>
+								<small>vs.</small>
+								<span class="opponent flag zimbabwe">Zimbabwe</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most runs scored by any player in a calendar year</li><li><i class="fa fa-caret-right fa-fw bronze"></i>1894 runs, 9 centuries in ODI</li>
+								</ul>
+								<div id="image10" class="image">
+																			<a href="assets/images/269-1.jpg"><img src="assets/images/thumbs/269.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event13" class="featured odi">
+
+					<div class="date">
+						Nov 8, 1999					</div>
+
+					<a href="#" class="anchor">297</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">November 8, 1999</div> -->
+								<div class="venue">Lal Bahadur Shastri Stadium, Hyderabad, Deccan</div>
+							</div>
+							<div class="title">
+								<span class="score">186*</span>
+								<small>vs.</small>
+								<span class="opponent flag new-zealand">New Zealand</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Highest partnership for any wicket</li><li><i class="fa fa-caret-right fa-fw bronze"></i>331 runs partnership with Dravid</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Personal highest score</li><li></li>
+								</ul>
+								<div id="image11" class="image">
+																			<a href="assets/images/297-1.jpg"><img src="assets/images/thumbs/297.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event14" class="featured odi">
+
+					<div class="date">
+						Jan 21, 2000					</div>
+
+					<a href="#" class="anchor">307</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">January 21, 2000</div> -->
+								<div class="venue">Bellerive Oval, Hobart</div>
+							</div>
+							<div class="title">
+								<span class="score">93</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most runs in ODI</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Desmond Haynes's record of 8648</li>
+								</ul>
+								<div id="image12" class="image">
+																			<a href="assets/images/307-1.jpg"><img src="assets/images/thumbs/307.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event15" class="featured odi">
+
+					<div class="date">
+						Mar 31, 2001					</div>
+
+					<a href="#" class="anchor">348</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 31, 2001</div> -->
+								<div class="venue">Nehru Stadium, Indore</div>
+							</div>
+							<div class="title">
+								<span class="score">139</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st to cross 10000 runs</li><li><i class="fa fa-star fa-fw gold"></i>Quickest to do so in 259 innings</li>
+								</ul>
+								<div id="image13" class="image">
+																			<a href="assets/images/348-1.jpg"><img src="assets/images/thumbs/348.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/348-2.jpg"><img src="assets/images/thumbs/348.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/348-3.jpg"><img src="assets/images/thumbs/348.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event16" class="featured odi">
+
+					<div class="date">
+						Jan 28, 2002					</div>
+
+					<a href="#" class="anchor">373</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">January 28, 2002</div> -->
+								<div class="venue">Green Park, Kanpur</div>
+							</div>
+							<div class="title">
+								<span class="score">87*</span>
+								<small>vs.</small>
+								<span class="opponent flag england">England</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st to cross 11000 runs</li>
+								</ul>
+								<div id="image14" class="image">
+																			<a href="assets/images/373-1.jpg"><img src="assets/images/thumbs/373.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event17" class="featured test">
+
+					<div class="date">
+						Dec 1, 2002					</div>
+
+					<a href="#" class="anchor">•</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="trivia">
+								Wisden rated him as the
+<ul>
+<li>2nd greatest Test batsman after Sir Donald Bradman &amp;</li>
+<li>2nd greatest ODI batsman after Viv Richards,</li>
+</ul>
+of all-time							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event18" class="featured odi">
+
+					<div class="date">
+						Mar 1, 2003					</div>
+
+					<a href="#" class="anchor">414</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 1, 2003</div> -->
+								<div class="venue">SuperSport Park, Centurion</div>
+							</div>
+							<div class="title">
+								<span class="score">98</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st to cross 12000 runs</li>
+								</ul>
+								<div id="image15" class="image">
+																			<a href="assets/images/414-1.jpg"><img src="assets/images/thumbs/414.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/414-2.jpg"><img src="assets/images/thumbs/414.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event19" class="featured odi">
+
+					<div class="date">
+						Mar 20, 2003					</div>
+
+					<a href="#" class="anchor">418</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 20, 2003</div> -->
+								<div class="venue"> Kingsmead, Durban</div>
+							</div>
+							<div class="title">
+								<span class="score">83</span>
+								<small>vs.</small>
+								<span class="opponent flag kenya">Kenya</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most runs by any player in a single Cricket World Cup</li><li><i class="fa fa-caret-right fa-fw bronze"></i>673 runs in 2003 world cup</li>
+								</ul>
+								<div id="image16" class="image">
+																			<a href="assets/images/418-1.jpg"><img src="assets/images/thumbs/418.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event20" class="featured test">
+
+					<div class="date">
+						Jan 2, 2004					</div>
+
+					<a href="#" class="anchor">432</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">January 2, 2004</div> -->
+								<div class="venue">Sydney Cricket Ground</div>
+							</div>
+							<div class="title">
+								<span class="score">241*</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-caret-right fa-fw bronze"></i>Personal highest in Test</li>
+								</ul>
+								<div id="image17" class="image">
+																			<a href="assets/images/432-1.jpg"><img src="assets/images/thumbs/432.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/432-2.jpg"><img src="assets/images/thumbs/432.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event21" class="featured odi">
+
+					<div class="date">
+						Mar 16, 2004					</div>
+
+					<a href="#" class="anchor">441</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 16, 2004</div> -->
+								<div class="venue">Rawalpindi Cricket Stadium</div>
+							</div>
+							<div class="title">
+								<span class="score">141</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st to cross 13000 runs</li>
+								</ul>
+								<div id="image18" class="image">
+																			<a href="assets/images/441-1.jpg"><img src="assets/images/thumbs/441.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event22" class="featured test">
+
+					<div class="date">
+						Dec 10, 2004					</div>
+
+					<a href="#" class="anchor">459</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">December 10, 2004</div> -->
+								<div class="venue">Bangabandhu National Stadium, Dhaka</div>
+							</div>
+							<div class="title">
+								<span class="score">248*</span>
+								<small>vs.</small>
+								<span class="opponent flag bangladesh">Bangladesh</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-caret-right fa-fw bronze"></i>Current personal highest in Test</li>
+								</ul>
+								<div id="image19" class="image">
+																			<a href="assets/images/459-1.jpg"><img src="assets/images/thumbs/459.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event23" class="featured test">
+
+					<div class="date">
+						Mar 16, 2005					</div>
+
+					<a href="#" class="anchor">464</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 16, 2005</div> -->
+								<div class="venue">Eden Gardens, Kolkata</div>
+							</div>
+							<div class="title">
+								<span class="score">52</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Quickest 10000 test runs (195 inn), along with Brian Lara</li>
+								</ul>
+								<div id="image20" class="image">
+																			<a href="assets/images/464-1.jpg"><img src="assets/images/thumbs/464.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event24" class="featured test">
+
+					<div class="date">
+						Dec 10, 2005					</div>
+
+					<a href="#" class="anchor">483</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">December 10, 2005</div> -->
+								<div class="venue">Feroz Shah Kotla, Delhi</div>
+							</div>
+							<div class="title">
+								<span class="score">109</span>
+								<small>vs.</small>
+								<span class="opponent flag sri-lanka">Sri Lanka</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most number of centuries in Test</li><li><i class="fa fa-caret-right fa-fw bronze"></i>35th Test century</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Sunil Gavaskar's record</li>
+								</ul>
+								<div id="image21" class="image">
+																			<a href="assets/images/483-1.jpg"><img src="assets/images/thumbs/483.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/483-2.jpg"><img src="assets/images/thumbs/483.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/483-3.jpg"><img src="assets/images/thumbs/483.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event25" class="featured odi">
+
+					<div class="date">
+						Feb 6, 2006					</div>
+
+					<a href="#" class="anchor">488</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">February 6, 2006</div> -->
+								<div class="venue">Arbab Niaz Stadium, Peshawar</div>
+							</div>
+							<div class="title">
+								<span class="score">100</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Only player to cross 14000 ODI runs</li>
+								</ul>
+								<div id="image22" class="image">
+																			<a href="assets/images/488-1.jpg"><img src="assets/images/thumbs/488.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/488-2.jpg"><img src="assets/images/thumbs/488.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event26" class="featured test">
+
+					<div class="date">
+						Jan 2, 2007					</div>
+
+					<a href="#" class="anchor">510</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">January 2, 2007</div> -->
+								<div class="venue">Newlands, Cape Town</div>
+							</div>
+							<div class="title">
+								<span class="score">64</span>
+								<small>vs.</small>
+								<span class="opponent flag south-africa">South Africa</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most runs scored in Tests away from home</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Lara's record of 5736</li>
+								</ul>
+								<div id="image23" class="image">
+																			<a href="assets/images/510-1.jpg"><img src="assets/images/thumbs/510.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/510-2.jpg"><img src="assets/images/thumbs/510.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event27" class="featured odi">
+
+					<div class="date">
+						Oct 11, 2007					</div>
+
+					<a href="#" class="anchor">541</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">October 11, 2007</div> -->
+								<div class="venue">Reliance Stadium, Vadodara</div>
+							</div>
+							<div class="title">
+								<span class="score">47</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st player to play 400 ODIs</li>
+								</ul>
+								<div id="image24" class="image">
+																			<a href="assets/images/541-1.jpg"><img src="assets/images/thumbs/541.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event28" class="featured odi">
+
+					<div class="date">
+						Mar 2, 2008					</div>
+
+					<a href="#" class="anchor">563</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 2, 2008</div> -->
+								<div class="venue">Sydney Cricket Ground</div>
+							</div>
+							<div class="title">
+								<span class="score">117*</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw silver"></i>Most ODI centuries against a single opponent</li><li><i class="fa fa-caret-right fa-fw bronze"></i>8th century against Australia</li>
+								</ul>
+								<div id="image25" class="image">
+																			<a href="assets/images/563-2.jpg"><img src="assets/images/thumbs/563.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event29" class="featured test">
+
+					<div class="date">
+						Oct 17, 2008					</div>
+
+					<a href="#" class="anchor">570</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">October 17, 2008</div> -->
+								<div class="venue"> Punjab Cricket Association Stadium, Mohali, Chandigarh</div>
+							</div>
+							<div class="title">
+								<span class="score">88</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most runs in Test</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Brian Lara's record of 11953</li>
+								</ul>
+								<div id="image26" class="image">
+																			<a href="assets/images/570-1.jpg"><img src="assets/images/thumbs/570.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/570-2.jpg"><img src="assets/images/thumbs/570.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event30" class="featured odi">
+
+					<div class="date">
+						Sep 14, 2009					</div>
+
+					<a href="#" class="anchor">588</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">September 14, 2009</div> -->
+								<div class="venue">R Premadasa Stadium, Colombo</div>
+							</div>
+							<div class="title">
+								<span class="score">138</span>
+								<small>vs.</small>
+								<span class="opponent flag sri-lanka">Sri Lanka</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw silver"></i>Most ODI centuries against a single opponent</li><li><i class="fa fa-caret-right fa-fw bronze"></i>8th century against Sri Lanka</li>
+								</ul>
+								<div id="image27" class="image">
+																			<a href="assets/images/588-1.jpg"><img src="assets/images/thumbs/588.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/588-2.jpg"><img src="assets/images/thumbs/588.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event31" class="featured odi">
+
+					<div class="date">
+						Nov 5, 2009					</div>
+
+					<a href="#" class="anchor">595</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">November 5, 2009</div> -->
+								<div class="venue">Rajiv Gandhi International Stadium, Uppal, Hyderabad</div>
+							</div>
+							<div class="title">
+								<span class="score">175</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Only batsman with 3000+ runs against an opponent</li><li><i class="fa fa-star fa-fw gold"></i>Most ODI centuries against a single opponent</li><li><i class="fa fa-caret-right fa-fw bronze"></i>8th century against Australia</li>
+								</ul>
+								<div id="image28" class="image">
+																			<a href="assets/images/595-1.jpg"><img src="assets/images/thumbs/595.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/595-2.jpg"><img src="assets/images/thumbs/595.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event32" class="featured odi">
+
+					<div class="date">
+						Feb 24, 2010					</div>
+
+					<a href="#" class="anchor">609</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">February 24, 2010</div> -->
+								<div class="venue">Captain Roop Singh Stadium, Gwalior</div>
+							</div>
+							<div class="title">
+								<span class="score">200*</span>
+								<small>vs.</small>
+								<span class="opponent flag south-africa">South Africa</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st person to score 200 runs in ODI</li><li><i class="fa fa-star fa-fw gold"></i>Only person with 5 150+ scores</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Broke Saeed Anwar's record after 13 years</li>
+								</ul>
+								<div id="image29" class="image">
+																			<a href="assets/images/609-1.jpg"><img src="assets/images/thumbs/609.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/609-2.jpg"><img src="assets/images/thumbs/609.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/609-3.jpg"><img src="assets/images/thumbs/609.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event33" class="featured test">
+
+					<div class="date">
+						Oct 9, 2010					</div>
+
+					<a href="#" class="anchor">614</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">October 9, 2010</div> -->
+								<div class="venue">M Chinnaswamy Stadium, Bangalore</div>
+							</div>
+							<div class="title">
+								<span class="score">214</span>
+								<small>vs.</small>
+								<span class="opponent flag australia">Australia</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>2nd player to score 11 Test centuries against Aus</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Tying with Sir Jack Hobbs, from 70 years ago</li>
+								</ul>
+								<div id="image30" class="image">
+																			<a href="assets/images/614-1.jpg"><img src="assets/images/thumbs/614.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/614-2.jpg"><img src="assets/images/thumbs/614.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/614-3.jpg"><img src="assets/images/thumbs/614.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event34" class="featured odi">
+
+					<div class="date">
+						Feb 27, 2011					</div>
+
+					<a href="#" class="anchor">624</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">February 27, 2011</div> -->
+								<div class="venue">M Chinnaswamy Stadium, Bangalore</div>
+							</div>
+							<div class="title">
+								<span class="score">120</span>
+								<small>vs.</small>
+								<span class="opponent flag england">England</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>2nd player (after Javed Miandad) to appear in 6 World Cups</li>
+								</ul>
+								<div id="image31" class="image">
+																			<a href="assets/images/624-1.jpg"><img src="assets/images/thumbs/624.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event35" class="featured odi">
+
+					<div class="date">
+						Mar 12, 2011					</div>
+
+					<a href="#" class="anchor">627</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 12, 2011</div> -->
+								<div class="venue">Vidarbha Cricket Association Stadium, Jamtha, Nagpur</div>
+							</div>
+							<div class="title">
+								<span class="score">111</span>
+								<small>vs.</small>
+								<span class="opponent flag south-africa">South Africa</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most centuries in World Cup: 6</li><li><i class="fa fa-star fa-fw gold"></i>First person to cross 2000 runs in World Cups</li>
+								</ul>
+								<div id="image32" class="image">
+																			<a href="assets/images/627-1.jpg"><img src="assets/images/thumbs/627.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event36" class="featured odi">
+
+					<div class="date">
+						Mar 16, 2012					</div>
+
+					<a href="#" class="anchor">654</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 16, 2012</div> -->
+								<div class="venue">Shere Bangla National Stadium, Mirpur</div>
+							</div>
+							<div class="title">
+								<span class="score">114</span>
+								<small>vs.</small>
+								<span class="opponent flag bangladesh">Bangladesh</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Only man with 100 centuries in international cricket</li>
+								</ul>
+								<div id="image33" class="image">
+																			<a href="assets/images/654-1.jpg"><img src="assets/images/thumbs/654.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/654-2.jpg"><img src="assets/images/thumbs/654.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/654-3.jpg"><img src="assets/images/thumbs/654.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event37" class="featured odi">
+
+					<div class="date">
+						Mar 18, 2012					</div>
+
+					<a href="#" class="anchor">655</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">March 18, 2012</div> -->
+								<div class="venue">Shere Bangla National Stadium, Mirpur </div>
+							</div>
+							<div class="title">
+								<span class="score">52</span>
+								<small>vs.</small>
+								<span class="opponent flag pakistan">Pakistan</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-caret-right fa-fw bronze"></i>Last ODI match</li><li><i class="fa fa-caret-right fa-fw bronze"></i>18426 runs</li>
+								</ul>
+								<div id="image34" class="image">
+																			<a href="assets/images/655-1.jpg"><img src="assets/images/thumbs/655.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event38" class="featured test">
+
+					<div class="date">
+						Feb 8, 2013					</div>
+
+					<a href="#" class="anchor">•</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">February 8, 2013</div> -->
+								<div class="venue">Wankhede Stadium, Mumbai</div>
+							</div>
+							<div class="title">
+								<span class="score">140*</span>
+								<small>vs.</small>
+								<span class="opponent flag rest-of-india">Rest of India</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>Most first-class centuries by an Indian</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Tying with Sunil Gavaskar</li><li><i class="fa fa-caret-right fa-fw bronze"></i>81st first-class hundred</li>
+								</ul>
+								<div id="image35" class="image">
+																			<a href="assets/images/x4-1.jpg"><img src="assets/images/thumbs/x4.jpg" width="140" height="140" /></a>
+																			<a href="assets/images/x4-2.jpg"><img src="assets/images/thumbs/x4.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event39" class="featured odi">
+
+					<div class="date">
+						Oct 5, 2013					</div>
+
+					<a href="#" class="anchor">•</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">October 5, 2013</div> -->
+								<div class="venue"> Feroz Shah Kotla, Delhi</div>
+							</div>
+							<div class="title">
+								<span class="score">35</span>
+								<small>vs.</small>
+								<span class="opponent flag trinidad-and-tobago">Trinidad and Tobago</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st Asian to cross 50000 runs across all forms</li><li><i class="fa fa-caret-right fa-fw bronze"></i>Overall 16th player to do so</li>
+								</ul>
+								<div id="image36" class="image">
+																			<a href="assets/images/x5-1.jpg"><img src="assets/images/thumbs/x5.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li id="event40" class="featured test">
+
+					<div class="date">
+						Nov 14, 2013					</div>
+
+					<a href="#" class="anchor">664</a>
+
+					<div class="content">
+						<div class="content-inner">
+							<div class="meta">
+								<!-- <div class="date">November 14, 2013</div> -->
+								<div class="venue">Wankhede Stadium, Mumbai</div>
+							</div>
+							<div class="title">
+								<span class="score">XXX</span>
+								<small>vs.</small>
+								<span class="opponent flag west-indies">West Indies</span>
+							</div>
+							<div class="details">
+								<ul>
+									<li><i class="fa fa-star fa-fw gold"></i>1st player to play 200 test matches</li><li><i class="fa fa-caret-right fa-fw bronze"></i>15xxx runs</li>
+								</ul>
+								<div id="image37" class="image">
+																			<a href="assets/images/664-1.jpg"><img src="assets/images/thumbs/664.jpg" width="140" height="140" /></a>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+			</ul>
 		</div>
 	</div>
+
+	<div id="footer-container">
+		<div id="footer" class="wrap">
+			<h2>an era comes to an end</h2>
+			<h1>Nov. 1989 - Nov. 2013</h1>
+
+			<div id="share">
+				<div class="fb-share-button" data-href="http://shrihari.me/sachin/" data-type="button_count"></div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="shrihari">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+
+			<div id="author">
+				crafted with <i class="fa fa-heart fa-fw red"></i> by <a href="http://shrihari.me/">shrihari</a>
+			</div>
+			<div id="thanks">
+				all data from <a href="http://stats.espncricinfo.com/ci/engine/stats/index.html">cricinfo</a>. in case of any error, please email me at iamshrihari@gmail.com
+			</div>
+		</div>
+	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38703797-2', 'shrihari.me');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 

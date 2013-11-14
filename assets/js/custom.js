@@ -74,62 +74,6 @@ $(document).ready(function(){
 		}
 
 		$('#spos').text(s);
-
-		// for(var i = 1; i < 41; i++)
-		// {
-		// 	positions.push($('#event'+i).offset().top);
-		// }
-
-		// switch(s)
-		// {
-		// 	case 700: $('#event1').fadeIn(); break;
-		// 	case 960: $('#event2').fadeIn(); break;
-		// 	case 1320: $('#event3').fadeIn(); break;
-		// 	case 1670: $('#event4').fadeIn(); break;
-		// 	case 2050: $('#event5').fadeIn(); break;
-		// 	case 2420: $('#event6').fadeIn(); break;
-		// 	case 2770: $('#event7').fadeIn(); break;
-		// 	case 3140: $('#event8').fadeIn(); break;
-		// 	case 3510: $('#event9').fadeIn(); break;
-		// 	case 3870: $('#event10').fadeIn(); break;
-		// 	case 4240: $('#event11').fadeIn(); break;
-		// 	case 4600: $('#event12').fadeIn(); break;
-		// 	case 4960: $('#event13').fadeIn(); break;
-		// 	case 5330: $('#event14').fadeIn(); break;
-		// 	case 5690: $('#event15').fadeIn(); break;
-		// 	case 6060: $('#event16').fadeIn(); break;
-		// 	case 6410: $('#event17').fadeIn(); break;
-		// 	case 6710: $('#event18').fadeIn(); break;
-		// 	case 7060: $('#event19').fadeIn(); break;
-		// 	case 7420: $('#event20').fadeIn(); break;
-		// 	case 7790: $('#event21').fadeIn(); break;
-		// 	case 8160: $('#event22').fadeIn(); break;
-		// 	case 8530: $('#event23').fadeIn(); break;
-		// 	case 8880: $('#event24').fadeIn(); break;
-		// 	// case : $('#event25').fadeIn(); break;
-		// 	// case : $('#event26').fadeIn(); break;
-		// 	// case : $('#event27').fadeIn(); break;
-		// 	// case : $('#event28').fadeIn(); break;
-		// 	// case : $('#event29').fadeIn(); break;
-		// 	// case : $('#event30').fadeIn(); break;
-		// 	// case : $('#event31').fadeIn(); break;
-		// 	// case : $('#event32').fadeIn(); break;
-		// 	// case : $('#event33').fadeIn(); break;
-		// 	// case : $('#event34').fadeIn(); break;
-		// 	// case : $('#event35').fadeIn(); break;
-		// 	// case : $('#event36').fadeIn(); break;
-		// 	// case : $('#event37').fadeIn(); break;
-		// 	// case : $('#event38').fadeIn(); break;
-		// 	// case : $('#event39').fadeIn(); break;
-		// 	// case : $('#event40').fadeIn(); break;
-		// }
 	});
 
-	// $('.small-content').hide();
-
-	// $('.small-anchor').hover(function(){
-	// 	$(this).siblings('.small-content').stop().fadeIn();
-	// }, function(){
-	// 	$(this).siblings('.small-content').stop().fadeOut();
-	// });
 });

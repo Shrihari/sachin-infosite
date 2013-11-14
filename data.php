@@ -208,6 +208,9 @@ if (($handle = fopen("data.csv", "r")) !== FALSE)
 			<div id="author">
 				crafted with <i class="fa fa-heart fa-fw red"></i> by <a href="http://shrihari.me/">shrihari</a>
 			</div>
+			<div id="thanks">
+				all data from <a href="http://stats.espncricinfo.com/ci/engine/stats/index.html">cricinfo</a>. in case of any error, please email me at iamshrihari@gmail.com
+			</div>
 		</div>
 	</div>
 
