@@ -1,0 +1,346 @@
+/* #3284d8; */
+html {
+  height: 100%;
+}
+body {
+  background: #fff7e1;
+  height: 100%;
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+/* Top Intro Section */
+#intro-container {
+  width: 100%;
+  height: 800px;
+  color: #fff;
+  background: #3284d8;
+  text-align: center;
+  background-clip: padding-box;
+  border-bottom: 10px solid rgba(50, 132, 216, 0.5);
+}
+#intro {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+#intro > h1 {
+  font-family: 'Arvo';
+  font-size: 108px;
+  font-weight: normal;
+  margin: 0;
+  text-shadow: 4px 3px 0 #3284d8, 9px 8px 0 rgba(0, 0, 0, 0.15);
+}
+#intro > h2 {
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 20px 0;
+}
+h2 > span {
+  text-decoration: line-through;
+}
+#instructions {
+  font-size: 18px;
+  opacity: 0.3;
+  position: relative;
+  top: 200px;
+}
+/* Main info section */
+#body {
+  position: relative;
+  padding: 50px 0;
+  height: 14700px;
+}
+#timeline-bg {
+  width: 20px;
+  background: rgba(50, 132, 216, 0.5);
+  position: absolute;
+  left: 200px;
+  top: 0;
+  bottom: 0;
+}
+#timeline {
+  margin-top: -10px;
+  width: 6px;
+  background: #3284d8;
+  position: absolute;
+  top: 0;
+  height: 0px;
+  left: 7px;
+}
+#events {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#events > li {
+  position: relative;
+  margin: 0 0 10px 0;
+  min-height: 265px;
+  /*background: red;  */
+
+}
+/* Featured Events */
+.featured {
+  margin: 100px 0 100px 0!important;
+}
+.date,
+.anchor,
+.content {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.date {
+  width: 170px;
+  text-align: right;
+  top: 35px;
+  padding-right: 15px;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+.anchor {
+  top: 30px;
+  background: #3284d8;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  width: 40px;
+  text-align: center;
+  padding: 13px 0;
+  border-radius: 50%;
+  margin: 0;
+}
+.content {
+  margin-left: 20px;
+  width: 725px;
+  min-height: 150px;
+}
+.content-inner:before {
+  font-family: 'FontAwesome';
+  content: "\f0d9";
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 48px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -14px;
+  top: 28px;
+  z-index: 2;
+  text-shadow: -4px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.content-inner {
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.odi .content-inner {
+  color: #ffffff;
+  background: #3284d8;
+}
+.odi .content-inner:before {
+  color: #3284d8;
+}
+.test .content-inner {
+  color: #3284d8;
+  background: #ffffff;
+}
+.test .content-inner:before {
+  color: #ffffff;
+}
+.content-inner .title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.odi .content-inner .title {
+  border-bottom: 1px solid rgba(10, 68, 183, 0.5);
+}
+.test .content-inner .title {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.5);
+}
+.content-inner .title > .score {
+  font-size: 42px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+.content-inner .title > .opponent {
+  font-size: 36px;
+}
+.content-inner .meta {
+  text-align: right;
+  line-height: 160%;
+  float: right;
+  font-size: 12px;
+  opacity: 0.4;
+  padding: 8px 0;
+}
+.details {
+  padding: 15px 0 0 0;
+}
+.odi .content-inner .meta,
+.odi .content-inner .details,
+.odi .content-inner .details a {
+  color: #ffffff;
+}
+.test .content-inner .meta,
+.test .content-inner .details,
+.test .content-inner .details {
+  color: #555;
+}
+.odi .content-inner .details {
+  border-top: 1px solid rgba(90, 196, 249, 0.5);
+}
+.test .content-inner .details {
+  border-top: 1px solid rgba(253, 253, 253, 0.5);
+}
+.details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  width: 540px;
+}
+.image {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  height: 140px;
+  margin: 0;
+  padding: 0;
+}
+.trivia {
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+.trivia > ul {
+  font-size: 22px;
+  line-height: 140%;
+  margin: 5px 0;
+}
+.gold {
+  color: #ffdb68;
+}
+.silver {
+  color: #d1d1d1;
+}
+.bronze {
+  opacity: 0.3;
+}
+.flag {
+  padding-right: 50px;
+  background-size: 40px;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+.australia {
+  background-image: url('../img/flags/australia.png');
+}
+.bangladesh {
+  background-image: url('../img/flags/bangladesh.png');
+}
+.england {
+  background-image: url('../img/flags/england.png');
+}
+.india {
+  background-image: url('../img/flags/india.png');
+}
+.kenya {
+  background-image: url('../img/flags/kenya.png');
+}
+.new-zealand {
+  background-image: url('../img/flags/new-zealand.png');
+}
+.pakistan {
+  background-image: url('../img/flags/pakistan.png');
+}
+.south-africa {
+  background-image: url('../img/flags/south-africa.png');
+}
+.sri-lanka {
+  background-image: url('../img/flags/sri-lanka.png');
+}
+.west-indies {
+  background-image: url('../img/flags/west-indies.png');
+}
+.zimbabwe {
+  background-image: url('../img/flags/zimbabwe.png');
+}
+/* Footer Section */
+#footer-container {
+  width: 100%;
+  min-height: 810px;
+  color: #fff;
+  background: #3284d8;
+  text-align: center;
+  background-clip: padding-box;
+  border-top: 10px solid rgba(50, 132, 216, 0.5);
+}
+#footer {
+  position: relative;
+  top: 160px;
+}
+#footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#footer > h1 {
+  font-family: 'Arvo';
+  font-size: 72px;
+  font-weight: normal;
+  margin: 0;
+  text-shadow: 4px 3px 0 #3284d8, 9px 8px 0 rgba(0, 0, 0, 0.15);
+}
+#footer > h2 {
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 40px 0;
+}
+#share {
+  margin: 50px 0;
+}
+.fb-share-button {
+  margin-right: 10px;
+}
+.twitter-share-button {
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+}
+#author {
+  font-family: 'Arvo';
+  font-size: 28px;
+  position: relative;
+  top: 170px;
+  color: rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+#author > a {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  text-decoration: underline;
+}
+#thanks {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 240px;
+}
+#thanks > a {
+  color: rgba(0, 0, 0, 0.2);
+}
